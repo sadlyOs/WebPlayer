@@ -4,73 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/FastApiLearning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/api_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/keys/jwt-private.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/keys/jwt-public.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/versions/35d9ceb3c27f_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/versions/3c7be641a393_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/versions/66a7776a3485_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/migrations/versions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/user_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/pydantic_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/user_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/hash_password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/jwt_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/keys/jwt-private.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/keys/jwt-public.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/35d9ceb3c27f_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/3c7be641a393_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/66a7776a3485_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,5 +120,28 @@
       <updated>1720952817236</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,8 +1,6 @@
-.env
-app/.env
-__pycache__
-migrations
-app/db/migrations
-alembic.ini
-app/alembic.ini
+**.env
+**/__pycache__
+**/migrations
+**alembic.ini
 tests
+/migrations/
