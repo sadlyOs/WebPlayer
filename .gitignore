@@ -4,3 +4,4 @@
 **alembic.ini
 tests
 /migrations/
+alembic.ini
