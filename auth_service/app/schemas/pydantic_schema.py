@@ -10,7 +10,7 @@ class Message(BaseModel):
     message: str = "user was created"
 
 class Error_message(BaseModel):
-    message: str = "something went wrong"
+    detail: str = "something went wrong"
 
 class UserAdd(BaseModel):
     username: str = Field(max_length = 50)

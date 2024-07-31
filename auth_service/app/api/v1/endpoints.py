@@ -1,6 +1,7 @@
 from datetime import timedelta
 from typing import Annotated
 
+import loguru
 import sqlalchemy
 from fastapi import Depends , APIRouter , HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
@@ -37,7 +38,7 @@ async def register(user_data: UserAdd, service: Annotated[UserService, Depends(g
     except sqlalchemy.exc.IntegrityError as e:
         raise HTTPException(status_code=400, detail="Email or username is already registered")
 
-@router.post("/login", response_model = Token, responses = {
+@router.post("/login",responses = {
     200: {
             "status_code": 200,
             "model": Token,
@@ -51,16 +52,17 @@ async def register(user_data: UserAdd, service: Annotated[UserService, Depends(g
     },
 )
 async def login_user(
-        service: Annotated[UserService, Depends(get_users_service)],
-        form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+        form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
+        service: Annotated[UserService, Depends(get_users_service)]
 ):
     user = await service.get_user_by_username(form_data.username)
     if not user:
-        return HTTPException (status_code = 401 , detail = "Incorrect username or password")
-    if not check_hash_password(form_data.password, user.hash_password):
-        return HTTPException (status_code = 401 , detail = "Incorrect username or password")
+        raise HTTPException (status_code = 401 , detail = "Incorrect username or password")
+    if not await check_hash_password(form_data.password, user[0].hash_password):
+        raise HTTPException (status_code = 401 , detail = "Incorrect username or password")
     access_token_expires = timedelta(minutes=30)
-    access_token = await service.create_access_token(data={"sub": user.id, "username": user.username}, expires=access_token_expires)
+    access_token = await service.create_access_token(data={"sub": user[0].id, "username": user[0].username}, expires=access_token_expires)
+    user[0].token = access_token
     return Token(access_token=access_token, token_type="bearer")
 
 @router.delete("/delete", responses = {
@@ -77,7 +79,8 @@ async def login_user(
 async def delete(email: str, service: Annotated[UserService, Depends(get_users_service)]):
     await service.delete_user(email)
     return {"status_code": 200}
-#
-# @router.get("/me")
-# async def read_user_me(current_user: dict = Depends(oauth2_scheme)):
-#     return current_user
+
+@router.get("/me")
+async def read_user_me(service: Annotated[UserService, Depends(get_users_service)], current_user: dict = Depends(oauth2_scheme)):
+    loguru.logger.info(current_user)
+    return await service.decode_access_token(current_user)

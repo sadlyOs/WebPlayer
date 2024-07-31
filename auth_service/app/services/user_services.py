@@ -19,3 +19,6 @@ class UserService:
 
     async def create_access_token(self, data: dict, expires: datetime.timedelta):
         return await JWT.create_access_token(data = data, expires_delta = expires)
+
+    async def decode_access_token(self, token: str):
+        return await JWT.decode_access_token(token = token)
