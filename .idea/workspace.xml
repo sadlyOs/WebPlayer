@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/music_service/.env-non-dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/api/api_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/db/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/services/music_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/utils/aws.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/api/v1/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/api/v1/endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/schemas/pydantic_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/schemas/pydantic_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/services/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/services/user_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/utils/jwt_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/utils/jwt_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kali/PycharmProjects/FastApiLearning/app",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;music__service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kali/PycharmProjects/FastApiLearning/music_service/app/utils&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/music_service/app/utils" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/db" />
       <recent name="$PROJECT_DIR$/app/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/music_service" />
       <recent name="$PROJECT_DIR$/auth_service/app" />
       <recent name="$PROJECT_DIR$/auth_service" />
       <recent name="$PROJECT_DIR$/da" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main (1)">

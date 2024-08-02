@@ -83,6 +83,7 @@ wcwidth = "0.2.13"
 websockets = "12.0"
 redis = "^5.0.7"
 loguru = "^0.7.2"
+aiobotocore = "^2.13.1"
 
 
 [build-system]
