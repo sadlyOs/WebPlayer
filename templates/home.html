@@ -3,22 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document</title> 
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/home.css">
+    
   </head>
   <body>
-    <h1>Домашняя страница</h1>
-    <p id="main">Привет пользователь!</p>
+    <main>
+      <article class="content">
+        <section>
+          
+          <p id="welcome">Привет пользователь!</p>
+        </section>
 
-    <form method="post" enctype="multipart/form-data">
-        <div>
-            <label for="file">Загрузить музыку</label>
-            <input type="file" id="input" name="file" accept=".mp3" multiple/>
-        </div>
-        <div>
-            <button>Submit</button>
-        </div>
-    </form>
+        <section class="exist_playlist" id="exist_playlist">
+          <div onclick="createMusic('exist_playlist')">
+            <span>Загрузить музыку</span>
+          </div>
+        </section>
 
-    <script src="js/home.js"></script>
+        <section class="not_exist_playlist" id="not_exist_playlist">
+          <div onclick="createMusic('not_exist_playlist')">
+            <span>Создать плейлист</span>
+          </div>
+        </section>
+
+        
+        <section class="playlist__container"> 
+          <section class="all_playlists__conteiner">
+            <section class="welcome__conteiner">
+              <h3>Herzlich willkommen</h3><br>
+              <p>Ihre Wiedergabelisten</p>
+              <section class="content__conteiner">
+                <div>
+                  <img src="aquatic-underwater-city-sfykuics289t3wiz.jpg" alt="photo">
+                  <p class="album">Good Omens</p>
+                  <p class="artist">David Arnold</p>
+                </div> 
+              </section>
+            </section>  
+          </section>
+          <!-- <ul class="playlists__ul" id="playlists_ul">
+          </ul> -->
+          <section class="all_musics__conteiner">
+          </section>
+        </section>
+      </article>
+      <!-- <h1>Домашняя страница</h1>
+      <p id="main">Привет пользователь!</p>
+
+      <div onclick="createMusic()">
+        <span>Загрузить музыку</span>
+      </div>
+
+      <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio controls src="https://musicbasket.s3.eu-north-1.amazonaws.com/What+I've+Done.mp3"></audio>
+      </figure> -->
+
+      <div class="popup-overlay" id="popupOverlay">
+
+        <div class="popup" id="popup">
+
+          <span class="close" id="closePopup">&times;</span>
+
+            <div class="popup-content">
+              
+              <form id="musicForm" enctype="multipart/form-data" method="POST">
+                <h2>Laden Sie den Track hier herunter</h2>
+
+                <label> Sie den Namen des Tracks:
+                <input type="text" placeholder="Der Text" id="title" name="title" required autofocus><br>
+                </label>
+
+                <label> Sie den Interpreten des Liedes:
+                  <input type="text" placeholder="Der Text" id="artist" name="artist"><br>
+                </label>
+
+                <label> Sie den Namen des Albums des Tracks:
+                  <input type="text" placeholder="Der Text" id="album" name="album"><br>
+                </label>
+
+                <label> Sie das Genre des Tracks:
+                  <input type="text" placeholder="Der Text" id="genre" name="genre"><br>
+                </label>
+                
+                <label> Playlist id:
+                  <input type="number" placeholder="1" id="playlist_id" name="playlist_id"><br>
+                </label>
+
+                <label for="file">Laden Sie den Track hier hoch
+                  <input type="file" id="file" name="file" accept="audio/mpeg" required/> <br> 
+                </label>
+
+                <label for="file"> Laden Sie hier ein Foto hoch 
+                  <input type="file" name="photo" id="photo" accept="image/jpeg" required/>
+                </label>
+                
+                <button type="submit">Подтвердить</button>
+                <progress id="progressBar" value="0" max="100"></progress>
+                <div class="form-upload__container">
+                  <span class="form-upload__status" id="uploadForm_Status"></span>
+                  <span id="uploadForm_Size"></span>
+                </div>
+              </form>
+              
+              <form id="playlistForm" enctype="application/x-www-form-urlencoded" method="POST">
+                <h2>Laden Sie den Playlist hier herunter</h2>
+                <label> Sie den Namen des Playlists:
+                <input type="text" placeholder="Der Text" id="title" name="title" required autofocus><br>
+                </label>
+
+                <button type="submit">Подтвердить</button>
+                
+              </form>
+              
+              <p id="success">Операция была успешно выполнена!</p>
+            </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script type="module" src="js/home.js"></script>
+    
   </body>
 </html>

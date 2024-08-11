@@ -25,3 +25,5 @@ class AWS:
     async def upload_file (cls, file: bytes, file_name: str, bucket_name: str):
         async with cls.get_client() as s3:
             await s3.put_object(Bucket=bucket_name, Key=file_name, Body=file)
+
+

@@ -13,7 +13,7 @@ class MusicAdd(BaseModel):
     playlist_id: int = Form()
 
 class PlaylistAdd(BaseModel):
-    user_id: int = Field()
+    user_id: int = Form()
     title: str = Form()
 
 

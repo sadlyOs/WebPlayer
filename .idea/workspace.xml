@@ -5,30 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/music_service/.env-non-dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/api/api_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/db/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/db/session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/services/music_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/utils/aws.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/core/keys/jwt-public.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/core/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/repositories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_service/app/utils/jwt_token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/.env-non-dev" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/.env-non-dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/.env-non-dev" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/.env-non-dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/db/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/services/music_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/app/utils/aws.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/utils/aws.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music_service/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +59,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml.auth_service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.music_service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.music_service/Dockerfile runtime.executor&quot;: &quot;Run&quot;,
     &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;music__service&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kali/PycharmProjects/FastApiLearning/music_service/app/utils&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kali/PycharmProjects/FastApiLearning/env/bin&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
@@ -80,7 +86,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Docker.music_service/Dockerfile runtime">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FastApiLearning" />
       <option name="ENV_FILES" value="" />
@@ -131,8 +137,54 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.auth_service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="auth_service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.music_service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="music_service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="music_service/Dockerfile runtime" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="python3.11-slim-bookworm_runtime" />
+          <option name="buildCliOptions" value="--target runtime" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="music_service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.music_service/Dockerfile runtime" />
+        <item itemvalue="Docker.docker-compose.yml.auth_service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.music_service: Compose Deployment" />
         <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
@@ -140,7 +192,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+        <option value="bundled-python-sdk-8336bb23522e-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19072.16" />
       </set>
     </attachedChunks>
   </component>

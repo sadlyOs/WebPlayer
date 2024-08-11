@@ -14,6 +14,13 @@ sys.path.insert(1, os.path.join(sys.path[0], '..'))
 
 app = FastAPI(openapi_url = "/auth/v1/openapi.json", docs_url="/auth/v1/docs")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Измените на список доменов вашего фронтенда
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 @app.on_event("startup")
 async def startup():
     async with async_engine.connect() as conn:
@@ -22,13 +29,7 @@ async def startup():
 
 app.include_router(api_router)
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Измените на список доменов вашего фронтенда
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
 
 
 @app.get("/")

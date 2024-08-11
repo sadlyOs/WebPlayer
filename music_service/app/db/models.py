@@ -13,6 +13,7 @@ class Play_list(Base):
     id: Mapped[int] = mapped_column(primary_key = True)
     user_id: Mapped[int]
     title: Mapped[str]
+    photo_path: Mapped[str]
     music: Mapped[list["Music"]] = relationship(back_populates = "playlist")
     upload_date: Mapped[datetime] = mapped_column(server_default = text( "TIMEZONE('utc', now())"))
 

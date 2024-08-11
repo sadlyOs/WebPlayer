@@ -1,13 +1,16 @@
-FROM python:3.11
+FROM python:3.11-slim
 
-RUN mkdir /web_layer
+WORKDIR /app
 
-WORKDIR /web_layer
+COPY ./requirements.txt /app/requirements.txt
 
-COPY requirements.txt .
+#RUN apt-get update \
+#    && apt-get install gcc -y \
+#    && apt-get clean
 
-RUN pip install -r requirements.txt
+RUN pip install -r /app/requirements.txt \
+    && rm -rf /root/.cache/pip
 
-COPY . .
+COPY . /app/
 
 #CMD gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind=0.0.0.0:8000

@@ -6,7 +6,7 @@ document
     const password = document.getElementById("regPassword").value;
     const email = document.getElementById("regEmail").value;
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/v1/register", {
+      const response = await fetch("http://127.0.0.1:8080/auth/v1/register", {
         method: "POST",
         headers: {
           accept: "application/json",
