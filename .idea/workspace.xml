@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/music_service/app/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/core/keys/jwt-public.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/core/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_service/app/utils/jwt_token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/.env-non-dev" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/.env-non-dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/.env-non-dev" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/.env-non-dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/db/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/schemas/pydantic_schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/services/music_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/utils/aws.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/utils/aws.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

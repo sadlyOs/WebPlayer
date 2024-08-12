@@ -31,7 +31,7 @@ body {
 .all_playlists__conteiner {
     width: 912px;
     height: 992px; 
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 22px;
 }
 
@@ -52,8 +52,6 @@ body {
 .content__conteiner {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #000;
-    word-break: break-word;
     width: 864px;
     height: 808px;
     top: 144px;
@@ -62,11 +60,12 @@ body {
     overflow: scroll;
 }
 
-.content__conteiner div {
-    flex: 25%;
+.content__conteiner .conteiner__show__playlists {
     width: 192px;
     height: 232px;
     font-size: 16px;
+    padding: 10px;
+    transition: 0.7s
     
 }
 
@@ -74,6 +73,14 @@ body {
     width: 192px;
     height: 192px;
     border-radius: 22px;
+    transition: 0.07s
+}
+
+.content__conteiner img:hover {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 10px;
+    
 }
 
 .content__conteiner .album {

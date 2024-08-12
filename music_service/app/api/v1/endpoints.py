@@ -35,9 +35,9 @@ async def create_music(
 @router.post("/playlist", responses = {200: {"model": PlaylistAdd}})
 async def create_playlist(
         service: Annotated[MusicService, Depends(get_music_services)],
+        photo: Annotated[UploadFile, File(media_type = "image/jpeg")],
+        items: Annotated[PlaylistAdd, Depends()],
         security: Annotated[dict, Depends(oauth2_scheme)],
-        photo: Annotated[UploadFile, File(media_type="image/jpeg")],
-        items: Annotated[PlaylistAdd, Depends()]
 ):
     jwt = await service.get_hwt_operation()
     await jwt.decode_access_token( security )

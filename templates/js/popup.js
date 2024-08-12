@@ -45,8 +45,10 @@ async function createMusic(argument) {
   playlistForm.addEventListener("submit", event => {
     event.preventDefault();
     const data = new FormData(playlistForm);
+    const fileForm = new FormData();
     data.append("user_id", parseInt(user_id));
-    postPlaylist(data).then((response) => {
+    fileForm.append("photo", data.get("photo"), data.get("title"))
+    postPlaylist(data, fileForm).then((response) => {
       if (response.ok) return response.json()
     }).then((data) => {
       console.log(data);
@@ -113,11 +115,12 @@ async function createMusic(argument) {
 }
 
 
-async function postPlaylist(data) {
+async function postPlaylist(data, form) {
   return await fetch(`http://localhost:8080/music/v1/playlist?user_id=${data.get('user_id')}&title=${data.get('title')}`, {
     method: "POST", 
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     },
+    body: form,
   });
 }

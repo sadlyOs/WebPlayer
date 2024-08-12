@@ -12,7 +12,7 @@
     <main>
       <article class="content">
         <section>
-          
+
           <p id="welcome">Привет пользователь!</p>
         </section>
 
@@ -29,25 +29,25 @@
         </section>
 
         
-        <section class="playlist__container"> 
-          <section class="all_playlists__conteiner">
-            <section class="welcome__conteiner">
+        <article class="playlist__container"> 
+          <div class="all_playlists__conteiner">
+            <div class="welcome__conteiner">
               <h3>Herzlich willkommen</h3><br>
               <p>Ihre Wiedergabelisten</p>
-              <section class="content__conteiner">
-                <div>
-                  <img src="aquatic-underwater-city-sfykuics289t3wiz.jpg" alt="photo">
+              <div class="content__conteiner" id="content_conteiner">
+                <!-- <div class="conteiner__show__playlists">
+                  <img src="https://playlistphotos.s3.eu-north-1.amazonaws.com/Попса.jpg" alt="photo">
                   <p class="album">Good Omens</p>
                   <p class="artist">David Arnold</p>
-                </div> 
-              </section>
-            </section>  
-          </section>
-          <!-- <ul class="playlists__ul" id="playlists_ul">
-          </ul> -->
+                </div>  -->
+              </div>
+            </div>  
+          </div>
+         
+
           <section class="all_musics__conteiner">
           </section>
-        </section>
+        </article>
       </article>
       <!-- <h1>Домашняя страница</h1>
       <p id="main">Привет пользователь!</p>
@@ -110,8 +110,13 @@
               
               <form id="playlistForm" enctype="application/x-www-form-urlencoded" method="POST">
                 <h2>Laden Sie den Playlist hier herunter</h2>
+
                 <label> Sie den Namen des Playlists:
                 <input type="text" placeholder="Der Text" id="title" name="title" required autofocus><br>
+                </label>  
+
+                <label> Laden Sie hier ein Foto hoch
+                <input type="file" name="photo" id="photo" accept="image/jpeg" required/>
                 </label>
 
                 <button type="submit">Подтвердить</button>

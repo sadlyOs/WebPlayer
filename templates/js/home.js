@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 })
 
-async function getMusic() {
+document.addEventListener('DOMContentLoaded', () => {
   const user_id = localStorage.getItem("user_id");
-  const token = localStorage.getItem("token");  
+  const token = localStorage.getItem("token");
   const response = fetch(
     `http://localhost:8080/music/v1/allPlaylists?user_id=${user_id}`,
     {
@@ -40,30 +40,42 @@ async function getMusic() {
       if (response.ok) return response.json();
     })
     .then((data) => {
-      console.log(data)
+      console.log(data);
       if (data.length > 0) {
-        const existELement =
-          document.getElementById("exist_playlist");
+        const existELement = document.getElementById("exist_playlist");
         existELement.style.display = "block";
-        const ul = document.getElementById("playlists_ul");
-        data.forEach(element => {
-          console.log(element)
-          let li = document.createElement(`li`);
-          li.textContent = element.title;
-          ul.appendChild(li);
-        });
-      }
-      else {
-        const existELement =
-          document.getElementById("exist_playlist");
+
+        let conteiner = document.getElementById("content_conteiner");
+        for (let index = 0; index < data.length; index++) {
+          let newDiv = document.createElement("div");
+          const link = data[index].photo_path.replace(/\s/g, "+");
+          newDiv.className = "conteiner__show__playlists";
+          newDiv.id = "conteiner__show_playlists";
+          newDiv.innerHTML = `
+          <img src=${link}>
+          <p class="album">${data[index].title}</p>
+          `;
+          conteiner.appendChild(newDiv);
+        }
+      } else {
+        const existELement = document.getElementById("exist_playlist");
         existELement.style.display = "none";
       }
-      
+    });
 
-      
+});
+
+
+window.onload = (event) => {
+  console.log("load")
+  document
+    .getElementById("conteiner__show_playlists")
+    .addEventListener("click", (event) => {
+      console.log(event);
     });
 }
-
-
-
-getMusic();
+// document
+//   .getElementById("conteiner__show_playlists")
+//   .addEventListener("click", (event) => {
+//     console.log(event);
+//   });
