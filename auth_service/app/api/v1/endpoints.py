@@ -63,7 +63,7 @@ async def login_user(
     access_token_expires = timedelta(minutes=30)
     access_token = await service.create_access_token(data={"sub": user[0].id, "username": user[0].username}, expires=access_token_expires)
     user[0].token = access_token
-    return Token(access_token=access_token, token_type="bearer")
+    return Token(access_token=access_token, token_type="bearer", user_id=user[0].id)
 
 @router.delete("/delete", responses = {
     200: {
@@ -83,4 +83,8 @@ async def delete(email: str, service: Annotated[UserService, Depends(get_users_s
 @router.get("/me")
 async def read_user_me(service: Annotated[UserService, Depends(get_users_service)], current_user: dict = Depends(oauth2_scheme)):
     loguru.logger.info(current_user)
-    return await service.decode_access_token(current_user)
+    data: dict = await service.decode_access_token(current_user)
+    user = await service.get_user_by_username(data['username'])
+    if len(user) > 0:
+        return await service.decode_access_token(current_user)
+    raise HTTPException(status_code=401, detail="Invalid")

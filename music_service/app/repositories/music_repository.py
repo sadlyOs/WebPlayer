@@ -1,4 +1,7 @@
-from sqlalchemy import select
+import loguru
+
+
+from sqlalchemy import select, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.models import Music, Play_list
@@ -35,7 +38,7 @@ class MusicRepository:
         return playlists
 
     async def get_playlist_by_id(self, id: int):
-        execute = await self.__session.execute(select(Play_list).filter(Play_list.id == id))
+        execute = await self.__session.execute(select(Play_list).options(selectinload(Play_list.music)).filter(Play_list.id == id))
         playlist = execute.scalars().all()
         return playlist
 
@@ -43,7 +46,7 @@ class MusicRepository:
         execute = await self.__session.execute(select(Play_list).filter(Play_list.id == id))
         playlist = execute.first()
         if playlist:
-            await self.__session.delete(playlist)
+            await self.__session.execute(delete(Play_list).filter(Play_list.id == id))
             await self.__session.commit()
 
     async def delete_music(self, id: int):

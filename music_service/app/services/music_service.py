@@ -18,7 +18,7 @@ class MusicService:
         if bucket_name == "musicbasket":
             await AWS.upload_file(file = file.file , file_name = f"{data['title']}.mp3", bucket_name = bucket_name)
         else:
-            await AWS.upload_file(file = file.file , file_name = f"{data['title']}.jpg", bucket_name = bucket_name)
+            await AWS.upload_file(file = file.file , file_name = f"{data['title']}_{data['user_id']}.jpg", bucket_name = bucket_name)
 
 
 
@@ -38,6 +38,9 @@ class MusicService:
         await self.__music_repository.delete_playlist(id)
     async def delete_music(self, id: int):
         await self.__music_repository.delete_music(id)
+
+    async def delete_file(self, file_name: str, bucket_name: str):
+        await AWS.delete_file(file_name = file_name, bucket_name = bucket_name)
 
     async def get_hwt_operation(self):
         return JWT

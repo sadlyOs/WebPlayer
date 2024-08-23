@@ -32,7 +32,7 @@ async def create_music(
                                 photo_path = f"https://music-photos.s3.eu-north-1.amazonaws.com/{data['title']}.jpg" )
     return f'Der Track "{data.get("title")}" wurde erfolgreich hochgeladen'
 
-@router.post("/playlist", responses = {200: {"model": PlaylistAdd}})
+@router.post("/playlist")
 async def create_playlist(
         service: Annotated[MusicService, Depends(get_music_services)],
         photo: Annotated[UploadFile, File(media_type = "image/jpeg")],
@@ -45,8 +45,8 @@ async def create_playlist(
     loguru.logger.info(data)
     await service.add_data_to_buckets( file = photo , data = data , bucket_name = "playlistphotos" )
     await service.create_playlist(**data,
-                                  photo_path = f"https://playlistphotos.s3.eu-north-1.amazonaws.com/{data['title']}.jpg")
-    return {"items": items}
+                                  photo_path = f"https://playlistphotos.s3.eu-north-1.amazonaws.com/{data['title']}_{data['user_id']}.jpg")
+    return "Die Wiedergabeliste wurde erfolgreich hinzugefügt"
 
 @router.get("/allMusic", responses = {200: {"model": list[MusicView], "description": "All musics"}})
 async def read_all_musics(
@@ -69,7 +69,7 @@ async def read_playlists(
     data = await service.get_all_playlists(user_id=user_id)
     return data
 
-@router.get("/playlist/{id}")
+@router.get("/playlist/{id}", responses = {200: {"model": list[PlaylistView]}})
 async def read_playlist(
         id: int,
         service: Annotated[MusicService, Depends(get_music_services)],
@@ -89,3 +89,23 @@ async def read_music(
 ):
     return await service.get_music_by_id(id)
 
+
+@router.delete("/playlist", responses = {200: {"status_message": "Wiedergabeliste entfernt"}})
+async def delete_playlist(
+        data: dict,
+
+        service: Annotated[MusicService, Depends(get_music_services)],
+        security: Annotated[dict, Depends(oauth2_scheme)]
+):
+    jwt = await service.get_hwt_operation()
+    await jwt.decode_access_token(security)
+    loguru.logger.info(data)
+    await service.delete_file( file_name = data['photo_path'].replace("https://playlistphotos.s3.eu-north-1.amazonaws.com/", "") , bucket_name = "playlistphotos" )
+    if len(data['music']) > 0:
+        loguru.logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        for music in data['music']:
+            await service.delete_file( file_name = music['photo_path'].replace("https://music-photos.s3.eu-north-1.amazonaws.com/", ""), bucket_name = "music-photos")
+            await service.delete_file( file_name = music['file_path'].replace("https://musicbasket.s3.eu-north-1.amazonaws.com/", ""), bucket_name = "musicbasket")
+    loguru.logger.info(data['id'])
+    await service.delete_playlist(id = int(data['id']))
+    return {"status_code": 200, "message": "Wiedergabeliste entfernt"}
