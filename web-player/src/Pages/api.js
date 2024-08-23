@@ -4,6 +4,7 @@ export async function checkUser() {
   return axios
     .get("http://localhost:8080/auth/v1/me", {
       headers: {
+        accept: "application/json",
         Authorization: `Bearer ${localStorage.token}`,
       },
     })
@@ -15,7 +16,7 @@ export async function checkUser() {
 export async function authorization(username, password) {
   return axios
     .post(
-    "http://localhost:8080/auth/v1/login",
+      "http://localhost:8080/auth/v1/login",
       new URLSearchParams({
         grant_type: "",
         username: username,
@@ -29,5 +30,8 @@ export async function authorization(username, password) {
           accept: "application/json",
         },
       }
-  );
+    )
+    .then((response) => response.json())
+    .then((data) => data)
+    .catch((error) => error.response);
 }

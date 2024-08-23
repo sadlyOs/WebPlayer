@@ -17,51 +17,5 @@
     border-radius: 22px;
 }
 
-.login_form {
-    width: 90%;
-    height: 90%;
-}
-
-.form_header {
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.form_content {
-    margin-top: 10%;
-}
-
-.input__username {
-    width: 100%;
-    height: 55px    ;
-    background-color: #ebe6f5;
-    border-radius: 10px;
-}
-
-.input__username__content {
-    padding-top: 2%;
-    padding-left: 5%;
-}
-
-.input__username__content label {
-    color: rgba(0, 0, 0, 0.3)
-}
 
 
-
-.input__password {
-    margin-top: 10px;
-    width: 100%;
-    height: 55px    ;
-    background-color: #ebe6f5;
-    border-radius: 10px;
-}
-
-.input__password__content {
-    padding-top: 2%;
-    padding-left: 5%;
-}
-
-.input__password__content label {
-    color: rgba(0, 0, 0, 0.3)
-}
