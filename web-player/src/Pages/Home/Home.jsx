@@ -1,5 +1,5 @@
 import {Navigate} from 'react-router-dom'
-import {checkUser} from '../api.js'
+import {checkUser} from '../../api.js'
 import { useEffect, useState } from 'react'
 
 export default function Home(props) {

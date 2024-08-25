@@ -31,7 +31,28 @@ export async function authorization(username, password) {
         },
       }
     )
-    .then((response) => response.json())
+    .then((response) => response)
+    .then((data) => data)
+    .catch((error) => error.response);
+}
+
+
+export async function registration(username, email, password) {
+  return axios
+    .post("http://localhost:8080/auth/v1/register", "", {
+      params: {
+        username: username,
+        email: email,
+        password: password,
+      },
+
+      headers: {
+        accept: "application/json",
+      },
+    })
+    .then((response) => {;
+      return response;
+    })
     .then((data) => data)
     .catch((error) => error.response);
 }
