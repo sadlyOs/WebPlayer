@@ -9,7 +9,6 @@ from fastapi.responses import RedirectResponse
 from app.db.models import Base
 from app.db.session import async_engine
 
-sys.path.insert(1, os.path.join(sys.path[0], '..'))
 
 
 app = FastAPI(openapi_url = "/auth/v1/openapi.json", docs_url="/auth/v1/docs")

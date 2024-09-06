@@ -5,177 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0a20f41-e2fc-41b1-b331-feae67d9d528" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth_service/app/utils/celeryUtils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/app/utils/celeryUtils/worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FastApiLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FastApiLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/.env-non-dev" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/.env-non-dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth_service/app/api/v1/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/api/v1/endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/repositories/user_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth_service/app/schemas/pydantic_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/schemas/pydantic_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/api/v1/endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/repositories/music_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/services/music_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_service/app/utils/aws.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_service/app/utils/aws.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/aquatic-underwater-city-sfykuics289t3wiz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/.package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/.yarn-integrity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/bench.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/abort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/async.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/defer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/iterate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/readable_asynckit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/readable_parallel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/readable_serial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/readable_serial_ordered.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/streamify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/lib/terminator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/parallel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/serial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/serialOrdered.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/asynckit/stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/MIGRATION_GUIDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/axios.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/axios.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/browser/axios.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/browser/axios.cjs.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/esm/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/esm/axios.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/esm/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/esm/axios.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/node/axios.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/dist/node/axios.cjs.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/index.d.cts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/adapters/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/adapters/adapters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/adapters/fetch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/adapters/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/adapters/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/cancel/CancelToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/cancel/CanceledError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/cancel/isCancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/Axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/AxiosError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/AxiosHeaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/InterceptorManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/buildFullPath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/dispatchRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/mergeConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/settle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/core/transformData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/defaults/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/defaults/transitional.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/env/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/env/classes/FormData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/env/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/AxiosTransformStream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/AxiosURLSearchParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/HttpStatusCode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/ZlibHeaderTransformStream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/bind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/buildURL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/callbackify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/combineURLs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/composeSignals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/cookies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/deprecatedMethod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/formDataToJSON.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/formDataToStream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/fromDataURI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/isAbsoluteURL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/isAxiosError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/isURLSameOrigin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/null.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/parseHeaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/parseProtocol.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/progressEventReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/readBlob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/resolveConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/speedometer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/spread.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/throttle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/toFormData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/toURLEncodedForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/trackStream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/helpers/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/browser/classes/Blob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/browser/classes/FormData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/browser/classes/URLSearchParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/common/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/node/classes/FormData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/node/classes/URLSearchParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/platform/node/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/axios/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/combined-stream/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/combined-stream/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/combined-stream/lib/combined_stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/combined-stream/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/combined-stream/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/lib/delayed_stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/delayed-stream/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/https.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/follow-redirects/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/README.md.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/lib/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/lib/form_data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/lib/populate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/form-data/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-db/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-types/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-types/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-types/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/mime-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_modules/proxy-from-env/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/app/services/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/app/services/user_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/Pages/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/Pages/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/Pages/Pages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/Pages/Pages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/Pages/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/Pages/Registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/Pages/ResetPassword/ResetPassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/Pages/ResetPassword/ResetPassword.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/Pages/ResetPassword/ResetPassword.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/Pages/ResetPassword/ResetPassword.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/components/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/LoginForm/LoginForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/LoginForm/LoginForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/LoginForm/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/RegisterForm/RegisterForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/RegisterForm/RegisterForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/RegisterForm/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/ResetForm/ResetForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/ResetForm/ResetForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/ResetForm/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-player/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web-player/src/components/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,12 +71,13 @@
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;Docker.docker-compose.yml.auth_service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.music_service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.music_service/Dockerfile runtime.executor&quot;: &quot;Run&quot;,
     &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;music__service&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kali/PycharmProjects/FastApiLearning/env/bin&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;62115e91&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kali/PycharmProjects/CeleryLearn&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -224,14 +89,14 @@
       <recent name="$PROJECT_DIR$/app/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/music_service" />
       <recent name="$PROJECT_DIR$/auth_service/app" />
       <recent name="$PROJECT_DIR$/auth_service" />
+      <recent name="$PROJECT_DIR$/music_service" />
       <recent name="$PROJECT_DIR$/da" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.music_service/Dockerfile runtime">
+  <component name="RunManager" selected="Docker.docker-compose.yml.redis: Compose Deployment">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FastApiLearning" />
       <option name="ENV_FILES" value="" />
@@ -314,6 +179,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="music_service/Dockerfile runtime" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -327,6 +205,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
         <item itemvalue="Docker.music_service/Dockerfile runtime" />
         <item itemvalue="Docker.docker-compose.yml.auth_service: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.music_service: Compose Deployment" />
@@ -374,5 +253,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/lib/python3.12/site-packages/app/__init__.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

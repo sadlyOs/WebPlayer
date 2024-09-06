@@ -1,0 +1,23 @@
+.form_header {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form_content {
+    margin-top: 10%;
+}
+
+.form_content p {
+    display: none;
+    margin-top: 10px;
+    font-size: 15px;
+    color: red;
+}
+
+.form__links {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

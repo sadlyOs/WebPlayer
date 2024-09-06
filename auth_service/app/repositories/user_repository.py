@@ -26,3 +26,14 @@ class UserRepository:
         execute = await self.__async_session_maker.execute(user)
         result = execute.scalars().all()
         return result
+
+    async def get_user_by_email(self, email: str):
+        user = select(User).filter(User.email == email)
+        execute = await self.__async_session_maker.execute(user)
+        result = execute.scalars().all()
+        return result
+
+    async def update_user_password(self, password: str, email: str):
+        user = await self.get_user_by_email(email)
+        user[0].hash_password = await create_hash_password(password)
+        await self.__async_session_maker.commit()

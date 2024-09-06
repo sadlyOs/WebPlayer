@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 
 services:
   db_auth:
@@ -20,11 +20,14 @@ services:
     ports:
       - 8001:8000
     command:
-      uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+      sh -c "
+      alembic upgrade head &&
+      uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
 #    volumes:
 #      - ./auth_service/:/app/
     depends_on:
       - db_auth
+      - redis
 
   db_music:
     image: postgres:16-alpine
@@ -52,6 +55,27 @@ services:
 #      - ./music_service/:/app/
     depends_on:
       - db_music
+      - redis
+
+  celery:
+    build:
+      context: ./auth_service
+    container_name: worker_auth
+    command: celery -A app.utils.celeryUtils.worker:celery worker --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    container_name: redis_container
+    volumes:
+      - ./redisdata:/data
+    command: --port 6379
+    expose:
+      - 6379
 
   nginx:
     image: nginx:latest

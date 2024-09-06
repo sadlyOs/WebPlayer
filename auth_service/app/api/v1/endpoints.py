@@ -3,8 +3,9 @@ from typing import Annotated
 
 import loguru
 import sqlalchemy
-from fastapi import Depends , APIRouter , HTTPException
+from fastapi import Depends , APIRouter , HTTPException, Form
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from app.utils.celeryUtils import create_task
 
 
 from app.api.v1.dependencies import get_users_service
@@ -31,7 +32,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl = "/auth/v1/login")
         },
     },
 )
-async def register(user_data: UserAdd, service: Annotated[UserService, Depends(get_users_service)]):
+async def register(user_data: Annotated[UserAdd, Depends()], service: Annotated[UserService, Depends(get_users_service)]):
     try:
         await service.create_user(user_data)
         return {"message": "user was created"}
@@ -88,3 +89,33 @@ async def read_user_me(service: Annotated[UserService, Depends(get_users_service
     if len(user) > 0:
         return await service.decode_access_token(current_user)
     raise HTTPException(status_code=401, detail="Invalid")
+
+@router.get("/user/email")
+async def read_user_by_email(email: str, service: Annotated[UserService, Depends(get_users_service)]):
+    user = await service.get_user_by_email(email)
+    if len(user) > 0:
+        access_token_expires = timedelta( minutes = 30 )
+        data: dict = {'sub': email, 'username': email}
+        encode = await service.create_access_token(data = data, expires = access_token_expires)
+        result = f"http://localhost:5173/accounts/password/reset/linkReset?token={encode}"
+        create_task.delay(email=email, result=result)
+        return { "status": "success"}
+    raise HTTPException(status_code=404, detail="User not found")
+
+@router.get("/decode_token")
+async def decode_token(token: str, service: Annotated[UserService, Depends(get_users_service)]):
+    loguru.logger.info(token)
+    decode = await service.decode_access_token(token=token)
+    return {"user": decode}
+
+@router.put("/update_password")
+async def update_password(
+    new_password: str, 
+    email: str, 
+    service: Annotated[UserService, Depends(get_users_service)]):
+
+    user = await service.get_user_by_email(email)
+    if not await check_hash_password(new_password, user[0].hash_password):
+        await service.update_user_password(new_password, email)
+        return {"result": "The password was changed!"}
+    raise HTTPException(status_code=403, detail="Нельзя изменить пароль на уже существующий, напишите новый пароль.")

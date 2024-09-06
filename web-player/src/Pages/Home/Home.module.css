@@ -1,0 +1,30 @@
+.music_conteiner {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 70%;
+    height: 91%;
+    box-shadow: 1px 6px 18px -4px rgba(34, 60, 80, 0.2);
+    border-radius: 22px;
+}
+
+.conteiner_content {
+    width: 912px;
+    height: 90%;
+}
+
+.conteiner_content h2 {
+    margin: 100px 30px;
+    font-size: 40px;
+}
+
+.playlist_conteiner {
+    width: 90%;
+    height: 80%;
+    margin-left: 24px;
+}

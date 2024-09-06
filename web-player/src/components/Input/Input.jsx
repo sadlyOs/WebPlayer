@@ -1,6 +1,6 @@
 import s from './Input.module.css'
 
-export default function Input({children, type, placeholder, onChange=null, value=null, id=null}) {
+export default function Input({children, type, placeholder, onChange, value, id}) {
     return (
         <div className={s.input__conteiner}>
             <div className={s.input__content}>

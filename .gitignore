@@ -2,6 +2,9 @@
 **/__pycache__
 **/migrations
 **alembic.ini
+.idea
 tests
 /migrations/
 alembic.ini
+redisdata
+webplayer

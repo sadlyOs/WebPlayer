@@ -8,6 +8,8 @@ COPY ./requirements.txt /app/requirements.txt
 #    && apt-get install gcc -y \
 #    && apt-get clean
 
+RUN export PYTHONPATH=$PWD
+
 RUN pip install -r /app/requirements.txt \
     && rm -rf /root/.cache/pip
 
