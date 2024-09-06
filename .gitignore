@@ -1,4 +1,4 @@
-.env
+env
 /auth_service/.env
 /auth_service/.env-non-dev
 /auth_service/app/core/keys
