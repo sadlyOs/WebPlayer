@@ -8,3 +8,4 @@ tests
 alembic.ini
 redisdata
 webplayer
+templates
