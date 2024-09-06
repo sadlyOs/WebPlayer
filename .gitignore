@@ -5,12 +5,8 @@
 /music_service/.env
 /music_service/.env-non-dev
 **/__pycache__
-**/migrations
-**alembic.ini
 .idea
 tests
-/migrations/
-alembic.ini
 redisdata
 webplayer
 templates
