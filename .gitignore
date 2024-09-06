@@ -1,4 +1,9 @@
-**.env
+/auth_service/.env
+/auth_service/.env-non-dev
+/auth_service/app/core/keys
+/music_service/app/core/keys
+/music_service/.env
+/music_service/.env-non-dev
 **/__pycache__
 **/migrations
 **alembic.ini
